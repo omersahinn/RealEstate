@@ -1,2 +1,2 @@
 # RealEstate
-Emlak Scripti
+Emlak Sitesi projem
