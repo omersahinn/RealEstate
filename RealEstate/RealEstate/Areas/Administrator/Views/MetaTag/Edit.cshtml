@@ -1,0 +1,59 @@
+﻿@model RealEstate.Models.MetaTag
+@using RealEstate.HtmlHelpers
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Administrator/Views/Shared/Site.cshtml";
+}
+
+<div class="portlet x12">
+    <div class="portlet-header">
+        <h4>@Html.Language("", "MetaTagTitle")</h4>
+
+        <div class="portlet-content">
+            <br />
+            <a name="plugin"></a>
+
+            @using (Html.BeginForm())
+            {
+                @Html.ValidationSummary(true)
+
+                <div class="edit-set">
+                    <div class="form-horizontal">
+                        <hr />
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.MetaDescription, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.TextAreaFor(model => model.MetaDescription, new { @cols = 70, @rows = 7 })
+                                @Html.ValidationMessageFor(model => model.MetaDescription, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Keywords, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                <div class="checkbox">
+                                    @Html.TextAreaFor(model => model.Keywords)
+                                    @Html.ValidationMessageFor(model => model.Keywords, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit"  class="btn"  value="@Html.Language("","Save")" />
+                </div>
+            }
+
+        </div>
+    </div>
+</div>
+
+
+

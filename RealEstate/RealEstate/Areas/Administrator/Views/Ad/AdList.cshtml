@@ -1,0 +1,84 @@
+﻿@model IEnumerable<RealEstate.Models.Ad>
+@using RealEstate.HtmlHelpers
+
+@Html.BackToLink()
+<div id="Info">
+    <table cellpadding="0" cellspacing="0" border="0" class="display" id="example">
+        <thead>
+            <tr>
+                <th>
+                   @Html.Language("", "ListAdTitle")
+                
+                </th>
+
+                <th style="width:10%">
+                    @Html.Language("", "ListAdDetail")
+                </th>
+
+                <th style="width:10%">
+                    @Html.Language("", "ListAdPicture")
+                </th>
+                <th style="width:10%">
+                    @Html.Language("", "ListAdStatus")
+                </th>
+                <th style="width:2%">
+                    @Html.Language("", "Edit")
+                </th>
+                <th style="width:2%">
+                    @Html.Language("", "Delete")
+                </th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td style="border:solid 1px">
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+
+                    <td style="border:solid 1px">
+                        <a href="@Url.Action("AdDetail", new { id = item.ID, PageIndex = this.Url.RequestContext.RouteData.Values["PageIndex"] })" title="@item.Title">
+                            <img src="~/Areas/Administrator/Content/images/edit.png" />
+                        </a>
+                    </td>
+                  
+
+                    <td style="border:solid 1px">
+                        <a href="@Url.Action("UploadPicture", new { id = item.ID, PageIndex = this.Url.RequestContext.RouteData.Values["PageIndex"] })" title="@item.Title">
+                            <img src="~/Areas/Administrator/Content/images/edit.png" />
+                        </a>
+                    </td>
+
+                    <td style="border:solid 1px">
+                      @if (item.Status == true)
+                      {
+                          <img src="~/Areas/Administrator/Content/images/true.png" />
+                      }
+                      else
+                      {
+                        <img src="~/Areas/Administrator/Content/images/false.png" />
+                      }
+
+                    </td>
+                    <td style="border:solid 1px">
+                        <a href="@Url.Action("Edit", new { id = item.ID, PageIndex = this.Url.RequestContext.RouteData.Values["PageIndex"] })" title="@item.Title">
+                            <img src="~/Areas/Administrator/Content/images/edit.png" />
+                        </a>
+                    </td>
+                    <td style="border:solid 1px">
+                        <a href="@Url.Action("Delete", new { id = item.ID, PageIndex = this.Url.RequestContext.RouteData.Values["PageIndex"] })" class="deleteButton"title="@item.Title">
+                            <img src="~/Areas/Administrator/Content/images/cross.png" />
+                        </a>
+                    </td>
+                   
+                </tr>
+            }
+        </tbody>
+    </table>
+      
+        @Html.PageToLink(int.Parse(ViewData["TPage"].ToString()))
+        
+
+</div>

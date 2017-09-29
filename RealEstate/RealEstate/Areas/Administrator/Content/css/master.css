@@ -1,0 +1,106 @@
+﻿body
+{
+    margin: 0;   
+}
+#topDivider {
+    background-color: #FAFAD2; 
+    border-bottom: 2px double #B5B5B5; 
+    height: 90px; 
+    padding: 15px 0 10px 30px;
+}
+.display-set {
+    width: 40%;
+    padding: 6px 10px 14px 10px;
+    background-color: #EAF2FF;
+    margin-left: 30px;
+    border: 3px double #8F8F8F;
+}
+.display-label {
+    font-family: Tahoma;
+    font-size: 0.80em;
+    font-weight: bold;
+    padding: 3px;    
+}
+.display-field {   
+    font-family: Tahoma;
+    font-size: 0.85em;
+    padding: 3px;  
+    border: 1px solid #8F8F8F;
+    background-color: #FFFFFF;
+}
+.edit-set {
+    width: 440px;
+    padding: 6px 10px 14px 10px;
+    background-color: #F5E6C9;
+    margin-left: 30px;
+    border: 3px double #8F8F8F;
+}
+.tablesutun {
+	color: #333;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight:bold;
+}
+.ui-dialog-content div.edit-set {
+    /*width: 860;*/
+    margin: 0 20px 0 0;
+    background-color: transparent;
+}
+
+.ui-loading-icon 
+{
+    position: relative; 
+    top: 50px; 
+    left: 220px;
+}
+.button:hover {
+    background-color: white;
+    color: #006EFF;
+}
+.editor-label {
+    font-family: Tahoma;
+    font-size: 0.80em;
+    font-weight: bold;
+    padding: 3px;       
+}
+.editor-field {
+    padding: 1px;  
+    border: 1px solid #8F8F8F;
+    background-color: #FFFFFF;    
+}
+.editor-field-hidden {
+    display: none;
+}
+.editor-field input{
+    font-family: Tahoma;
+    font-size: 0.85em;
+    padding: 2px;  
+    border-style: none; 
+    width: 98%; 
+    background-color: transparent;
+}
+.readonly {
+    background-color:#C9C9C9;
+}
+#ajaxResult {
+    display: none; 
+    color: green;
+    font-family: arial;
+    font-size: 10pt;
+    font-weight:bold;
+    margin-top: 6px;
+    text-align: right;
+	position: absolute;
+	right: 600px;
+	top: 12px;
+	padding-right: 85px;
+}
+.resultMsg {
+    display: none; 
+    color: #136CBA;
+    font-family: arial;
+    font-size: 10pt;
+    font-weight:bold;
+    margin-bottom: 6px;
+}
+

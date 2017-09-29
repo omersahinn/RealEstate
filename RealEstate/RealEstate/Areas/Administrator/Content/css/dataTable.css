@@ -1,0 +1,4 @@
+﻿table{width: 800px; border: 3px double gray; border-collapse: collapse; font-family: Tahoma; font-size: 0.9em}
+th {background-color: #EAF2FF; font-size: 0.85em; font-weight: bold; border: 1px solid gray; padding: 2px 4px;}
+th.tedit, td.tedit{ width: 50px; text-align: center; font-size: 0.85em; }
+td {border: 1px solid gray; padding: 2px 4px;}

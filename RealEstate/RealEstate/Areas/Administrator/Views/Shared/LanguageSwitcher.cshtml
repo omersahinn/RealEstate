@@ -1,0 +1,7 @@
+﻿@using RealEstate.HtmlHelpers
+@using System.Collections
+
+@foreach (DictionaryEntry item in LanguageSessionControlAttribute.LanguageSession)
+{
+    @Html.LanguageSelectorLink(item.Key.ToString(), "[" + item.Value.ToString() + "]", "   " + item.Value.ToString() + "   ", null);
+}

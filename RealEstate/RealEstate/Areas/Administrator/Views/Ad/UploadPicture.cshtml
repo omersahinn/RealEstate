@@ -1,0 +1,85 @@
+﻿@model IEnumerable<RealEstate.Models.AdToPhoto>
+@using RealEstate.HtmlHelpers
+@{
+    ViewBag.Title = "Resim Yükle";
+    Layout = "~/Areas/Administrator/Views/Shared/Site.cshtml";
+}
+
+<div id="gallery_wrapper" class="portlet x8">
+    <div class="portlet-header">
+        <h4>@Html.Language("", "AdToPhotoTitle")</h4>
+    </div>
+    <div class="portlet-content">
+        <br />
+        <a name="plugin"></a>
+        <ul class="gallery">
+            @foreach (var item in Model)
+            {
+                <li id="@item.ID">
+                    <img alt="" src="/AdImages/100x100/@item.Photo" />
+                    <div class="actions">
+                        <a class="btn btn-orange btn-small" rel="facebox" href="/AdImages/400x216/@item.Photo">@Html.Language("", "View")</a>
+                        <a href="javascript:;" name="@item.ID" class="btn btn-grey btn-small delete">@Html.Language("", "Delete")</a>
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+
+
+<div class="portlet x4">
+
+    <div class="portlet-header">
+        <h4>@Html.Language("", "AdToPhotoUploadTitle")</h4>
+    </div>
+
+    <div class="portlet-content">
+
+
+            @using (Html.BeginForm("Upload", "Ad", new { id = ViewData["id"] }, FormMethod.Post, new { @id = "frmData", @class = "form label-top", enctype = "multipart/form-data" }))
+            {
+
+            <div class="field clearfix">
+                <label for="lname">@Html.Language("", "AdToPhotoUploadTitle")</label>
+                <input style="opacity: 0;" size="35" name="upload" class="file" type="file" />
+            </div>
+
+            <div class="buttonrow">
+                <input type="submit" value='@Html.Language("", "Save")' />
+            </div>
+
+            }
+
+
+    </div>
+</div>
+
+<script src="~/Areas/Administrator/Content/js/jquery.form.js"></script>
+<script src="~/Areas/Administrator/Content/js/jquery.blockUI.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("a.delete").click(function () {
+            var id = $(this).attr("name");
+
+            $.ajax({
+                url: '/Administrator/en/Ad/DeletePicture?id=' + id,
+                type: 'post',
+                dataType: 'html',
+                data: '{}',
+                success: function (data) {
+                    $("li#" + data).hide();
+                }
+            });
+        });
+
+        $("#frmData").ajaxForm({
+            iframe: true,
+            dataType: 'json',
+            success: function (data) {
+                $("ul.gallery").append(data);
+            }
+        });
+    });
+
+</script>

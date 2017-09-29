@@ -1,0 +1,269 @@
+﻿@model RealEstate.Models.Ad
+@using RealEstate.HtmlHelpers
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Administrator/Views/Shared/Site.cshtml";
+}
+
+<div class="portlet x12">
+    <div class="portlet-header">
+        <h4>@Html.Language("", "AdEditTitle")</h4>
+
+
+        <div class="portlet-content">
+            <br />
+            <a name="plugin"></a>
+            @using (Html.BeginForm("Edit", "Ad", FormMethod.Post, new { @class = "form label-inline" }))
+            {
+                @Html.ValidationSummary(true)
+
+                <div class="field">
+                    @Html.LabelFor(model => model.CategoryID, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.DropDownListFor(model => model.CategoryID, new SelectList(Model.categoryList, "ID", "Name",Model.CategoryID))
+                        @Html.ValidationMessageFor(model => model.CategoryID, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="field">
+                    @Html.LabelFor(model => model.KindID, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.DropDownListFor(model => model.KindID, new SelectList(Model.kindList, "ID", "Name",Model.KindID))
+                        @Html.ValidationMessageFor(model => model.KindID, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="field">
+                    @Html.LabelFor(model => model.TypeID, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.DropDownListFor(model => model.TypeID, new SelectList(Model.typeList, "ID", "Name",Model.TypeID))
+                        @Html.ValidationMessageFor(model => model.TypeID, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="field">
+                    @Html.LabelFor(model => model.CityID, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.DropDownListFor(model => model.CityID, new SelectList(Model.cityList, "ID", "Name",Model.CityID))
+                        @Html.ValidationMessageFor(model => model.CityID, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="field">
+                    @Html.LabelFor(model => model.TownID, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.DropDownListFor(model => model.TownID, new SelectList(Model.townList, "ID", "Name",Model.TownID))
+                        @Html.ValidationMessageFor(model => model.TownID, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="field">
+                    @Html.LabelFor(model => model.DistrictID, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.DropDownListFor(model => model.DistrictID, new SelectList(Model.districtList, "ID", "Name",Model.DistrictID))
+                        @Html.ValidationMessageFor(model => model.DistrictID, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="field">
+                    @Html.LabelFor(model => model.Location, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.Location)
+                        @Html.ValidationMessageFor(model => model.Location, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="field">
+                    @Html.LabelFor(model => model.Price, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.Price)
+                        @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="fname">&nbsp</label>
+                    @Html.DropDownListFor(model => model.PriceCurrencyID, new SelectList(Model.currencyList, "ID", "Code",Model.PriceCurrencyID))
+
+
+                </div>
+
+                <div class="field">
+                    @Html.LabelFor(model => model.Deposit, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.Deposit, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Deposit, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+
+                <div class="field">
+                    <label for="fname">&nbsp</label>
+                    @Html.DropDownListFor(model => model.DepositCurrencyID, new SelectList(Model.currencyList, "ID", "Code",Model.DepositCurrencyID))
+
+                </div>
+
+
+                <div class="field">
+                    @Html.LabelFor(model => model.SalesmanID, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.DropDownListFor(model => model.SalesmanID, new SelectList(Model.salesmanList, "ID", "Name",Model.SalesmanID))
+                        @Html.ValidationMessageFor(model => model.SalesmanID, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="field">
+                    @Html.LabelFor(model => model.OwnerName, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.OwnerName)
+                        @Html.ValidationMessageFor(model => model.OwnerName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="field">
+                    @Html.LabelFor(model => model.OwnerPhone, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.OwnerPhone)
+                        @Html.ValidationMessageFor(model => model.OwnerPhone, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="field">
+                    @Html.LabelFor(model => model.OwnerEmail, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.OwnerEmail)
+                        @Html.ValidationMessageFor(model => model.OwnerEmail, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="field">
+                    @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.Title)
+                        @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="field">
+                    @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextAreaFor(model => model.Description, new { @cols = 70, @rows = 7 })
+                        @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="field">
+                    @Html.LabelFor(model => model.MetaDescription, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.MetaDescription)
+                        @Html.ValidationMessageFor(model => model.MetaDescription, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="field">
+                    @Html.LabelFor(model => model.Keywords, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.Keywords)
+                        @Html.ValidationMessageFor(model => model.Keywords, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+
+                <div class="field">
+                    @Html.LabelFor(model => model.Seoword, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.Seoword)
+                        @Html.ValidationMessageFor(model => model.Seoword, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Status, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.CheckBoxFor(model => model.Status)
+                            @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttonrow">
+                    <input type="submit" class="btn" value="@Html.Language(" "," Save")" />
+
+                </div>
+
+            }
+        </div>
+    </div>
+</div>
+    
+<script src="~/Areas/Administrator/Content/ckeditor/ckeditor.js"></script>
+
+<script type="text/javascript">
+    window.onload = function () {
+
+        var editor = CKEDITOR.replace('Description');
+
+    };
+
+</script>
+<script type="text/javascript">
+
+   
+    window.onload = function () {
+        var editor = CKEDITOR.replace('Description');
+    };
+
+    $(document).ready(function () {
+        $("#KindID").change(function () {
+            var id = $(this).val();
+
+            $.ajax({
+                url: '/Ad/GetType?id=' + id,
+                type: 'POST',
+                dataType: 'json',
+                data: '{}',
+                success: function (data) {
+                    $("#TypeID").html(data);
+                }
+
+
+            });
+        });
+
+        $("#CityID").change(function () {
+            var id = $(this).val();
+
+            $.ajax({
+                url: '/Ad/GetTown?id=' + id,
+                type: 'POST',
+                dataType: 'json',
+                data: '{}',
+                success: function (data) {
+
+                    $("#TownID").html(data);
+                }
+
+
+            });
+        });
+
+        $("#TownID").change(function () {
+            var id = $(this).val();
+
+            $.ajax({
+                url: '/Ad/GetDistrict?id=' + id,
+                type: 'POST',
+                dataType: 'json',
+                data: '{}',
+                success: function (data) {
+
+                    $("#DistrictID").html(data);
+                }
+
+
+            });
+        });
+
+    });
+</script>

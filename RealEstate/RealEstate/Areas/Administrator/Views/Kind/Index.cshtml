@@ -1,0 +1,31 @@
+﻿@model IEnumerable<RealEstate.Models.Kind>
+@using RealEstate.HtmlHelpers
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Administrator/Views/Shared/Site.cshtml";
+}
+
+
+
+<div class="portlet x12">
+    <div class="portlet-header">
+        <h4>@Html.Language("","KindTitle")</h4>
+        <div id="info">
+            <div class="buttonrow">
+               <a href='@Url.Action("Create",new { PageIndex=this.Url.RequestContext.RouteData.Values["PageIndex"]})' class="aCreate" title="@Html.Language("","KindCreateTitle")" >
+                 <input type="submit" value="@Html.Language("","Create")" />
+               </a>
+                <a href='@Url.Action("Search",new { PageIndex=this.Url.RequestContext.RouteData.Values["PageIndex"]})' class="aCreate" title="@Html.Language("","KindSearchTitle")">
+                    <input type="submit" value="@Html.Language("","Search")" />
+                </a>
+            </div>
+        </div>
+        <div class="portlet-content">
+            <br />
+            <a name="plugin"></a>
+            @{Html.RenderPartial("KindList", Model); }
+        </div>
+    </div>
+</div>
+
+  

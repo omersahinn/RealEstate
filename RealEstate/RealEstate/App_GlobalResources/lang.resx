@@ -1,0 +1,960 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Back" xml:space="preserve">
+    <value>Geri Dön</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>İptal </value>
+  </data>
+  <data name="CategoryCreateTitle" xml:space="preserve">
+    <value>Kategori Oluşturma</value>
+  </data>
+  <data name="CategoryMetaDescriptionDisplay" xml:space="preserve">
+    <value>Meta Description</value>
+  </data>
+  <data name="CategoryNameDisplay" xml:space="preserve">
+    <value>Kategori Adı </value>
+  </data>
+  <data name="CategoryNameRequired" xml:space="preserve">
+    <value>Kategori Adı Boş Bırakılamaz</value>
+  </data>
+  <data name="CategoryNameString" xml:space="preserve">
+    <value>Kategori Adı {1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="CategorySearchTitle" xml:space="preserve">
+    <value>Kategori Arama</value>
+  </data>
+  <data name="CategoryStatusDisplay" xml:space="preserve">
+    <value>Kategori Durumu </value>
+  </data>
+  <data name="CategoryTitle" xml:space="preserve">
+    <value>Kategoriler</value>
+  </data>
+  <data name="CityCreateTitle" xml:space="preserve">
+    <value>İl Oluşturma</value>
+  </data>
+  <data name="CityNameDisplay" xml:space="preserve">
+    <value>İl Adı </value>
+  </data>
+  <data name="CityNameRequired" xml:space="preserve">
+    <value>İl Adı Alanı Boş Bırakılamaz</value>
+  </data>
+  <data name="CityNameString" xml:space="preserve">
+    <value>İl Adı Alanı {1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="CitySearchTitle" xml:space="preserve">
+    <value>İl Arama</value>
+  </data>
+  <data name="CityStatusDisplay" xml:space="preserve">
+    <value>Durumu </value>
+  </data>
+  <data name="CityTitle" xml:space="preserve">
+    <value>İller</value>
+  </data>
+  <data name="ConfirmationMessage" xml:space="preserve">
+    <value>Silmek İstediğinizden Eminmisiniz</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Ekle</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Sil </value>
+  </data>
+  <data name="DeleteData" xml:space="preserve">
+    <value>Kaydı Sil ?</value>
+  </data>
+  <data name="DistrictCreateTitle" xml:space="preserve">
+    <value>Semt Oluşturma</value>
+  </data>
+  <data name="DistrictNameDisplay" xml:space="preserve">
+    <value>Semt Adı </value>
+  </data>
+  <data name="DistrictNameRequired" xml:space="preserve">
+    <value>Semt Adı Boş Bırakılamaz</value>
+  </data>
+  <data name="DistrictNameString" xml:space="preserve">
+    <value>Semt Adı Alanı {1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="DistrictSearchTitle" xml:space="preserve">
+    <value>Semt Arama</value>
+  </data>
+  <data name="DistrictStatusDisplay" xml:space="preserve">
+    <value>Durumu </value>
+  </data>
+  <data name="DistrictTitle" xml:space="preserve">
+    <value>Semtler</value>
+  </data>
+  <data name="DistrictTownIDDisplay" xml:space="preserve">
+    <value>İlçe </value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Düzenle</value>
+  </data>
+  <data name="KindCreateTitle" xml:space="preserve">
+    <value>Emlak Türü Oluşturma</value>
+  </data>
+  <data name="KindDetailControlTypeDisplay" xml:space="preserve">
+    <value>Kontrol Tipi </value>
+  </data>
+  <data name="KindDetailCreateTitle" xml:space="preserve">
+    <value>Emlak Türü Detayı Oluşturma</value>
+  </data>
+  <data name="KindDetailKindIDDisplay" xml:space="preserve">
+    <value>Emlak Türü </value>
+  </data>
+  <data name="KindDetailMemberCreateTitle" xml:space="preserve">
+    <value>Emlak Türü Detay Elemanı Oluşturma</value>
+  </data>
+  <data name="KindDetailMemberKindDetailIDDisplay" xml:space="preserve">
+    <value>Emlak Türü Detayı</value>
+  </data>
+  <data name="KindDetailMemberNameDisplay" xml:space="preserve">
+    <value>Emlak Türü Detay Elemanı</value>
+  </data>
+  <data name="KindDetailMemberNameRequired" xml:space="preserve">
+    <value>Emlak Türü Detayı Boş Bırakılamaz</value>
+  </data>
+  <data name="KindDetailMemberNameString" xml:space="preserve">
+    <value>{1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="KindDetailMemberSearchTitle" xml:space="preserve">
+    <value>Emlak Türü Detay Elemanı Arama</value>
+  </data>
+  <data name="KindDetailMemberStatusDisplay" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="KindDetailMemberTitle" xml:space="preserve">
+    <value>Emlak Türü Detay Elemanları</value>
+  </data>
+  <data name="KindDetailNameDisplay" xml:space="preserve">
+    <value>Emlak Türü Detay Adı </value>
+  </data>
+  <data name="KindDetailNameRequired" xml:space="preserve">
+    <value>Emlak Türü Detay Adı Boş Bırakılamaz</value>
+  </data>
+  <data name="KindDetailNameString" xml:space="preserve">
+    <value>Emlak Türü Detay Adı {1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="KindDetailSearchTitle" xml:space="preserve">
+    <value>Emlak Türü Detayı Arama</value>
+  </data>
+  <data name="KindDetailStatusDisplay" xml:space="preserve">
+    <value>Durumu </value>
+  </data>
+  <data name="KindDetailTitle" xml:space="preserve">
+    <value>Emlak Türü Detayları</value>
+  </data>
+  <data name="KindNameDisplay" xml:space="preserve">
+    <value>Emlak Türü </value>
+  </data>
+  <data name="KindNameRequired" xml:space="preserve">
+    <value>Emlak Türü Boş Bırakılamaz</value>
+  </data>
+  <data name="KindNameString" xml:space="preserve">
+    <value>Emlak Türü  {1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="KindSearchTitle" xml:space="preserve">
+    <value>Emlak Türü Arama</value>
+  </data>
+  <data name="KindStatusDisplay" xml:space="preserve">
+    <value>Durum </value>
+  </data>
+  <data name="KindTitle" xml:space="preserve">
+    <value>Emlak Türleri</value>
+  </data>
+  <data name="LanguageCodeDisplay" xml:space="preserve">
+    <value>Dil Kodu </value>
+  </data>
+  <data name="LanguageCodeRequired" xml:space="preserve">
+    <value>Dil Kodu Boş Bırakılamaz</value>
+  </data>
+  <data name="LanguageCodeString" xml:space="preserve">
+    <value>Dil Kodu {1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="LanguageCreateTitle" xml:space="preserve">
+    <value>Dil Oluşturma</value>
+  </data>
+  <data name="LanguageFileNameDisplay" xml:space="preserve">
+    <value>Dosya </value>
+  </data>
+  <data name="LanguageFlagDisplay" xml:space="preserve">
+    <value>Bayrak </value>
+  </data>
+  <data name="LanguageNameDisplay" xml:space="preserve">
+    <value>Dil Adı </value>
+  </data>
+  <data name="LanguageNameRequired" xml:space="preserve">
+    <value>Dil Adı Boş Bırakılamaz</value>
+  </data>
+  <data name="LanguageNameString" xml:space="preserve">
+    <value>Dil Adı {1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="LanguageSearchTitle" xml:space="preserve">
+    <value>Dil Arama</value>
+  </data>
+  <data name="LanguageStatusDisplay" xml:space="preserve">
+    <value>Durum </value>
+  </data>
+  <data name="LanguageTitle" xml:space="preserve">
+    <value>Diller</value>
+  </data>
+  <data name="ListCategoryName" xml:space="preserve">
+    <value>Kategori Adı</value>
+  </data>
+  <data name="ListCategoryStatus" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="ListCityName" xml:space="preserve">
+    <value>İl Adı</value>
+  </data>
+  <data name="ListCityStatus" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="ListCityTownList" xml:space="preserve">
+    <value>İlçeler</value>
+  </data>
+  <data name="ListDistrictName" xml:space="preserve">
+    <value>Semt Adı</value>
+  </data>
+  <data name="ListDistrictStatus" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="ListDistrictTownID" xml:space="preserve">
+    <value>İlçe Adı</value>
+  </data>
+  <data name="ListKindDetailControlType" xml:space="preserve">
+    <value>Kontrol Tipi </value>
+  </data>
+  <data name="ListKindDetailKindID" xml:space="preserve">
+    <value>Emlak Türü </value>
+  </data>
+  <data name="ListKindDetailList" xml:space="preserve">
+    <value>Detaylar</value>
+  </data>
+  <data name="ListKindDetailMemberKindDetailID" xml:space="preserve">
+    <value>Detay Adı</value>
+  </data>
+  <data name="ListKindDetailMemberList" xml:space="preserve">
+    <value>Elemanlar</value>
+  </data>
+  <data name="ListKindDetailMemberName" xml:space="preserve">
+    <value>Ad</value>
+  </data>
+  <data name="ListKindDetailMemberStatus" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="ListKindDetailName" xml:space="preserve">
+    <value>Detay Adı </value>
+  </data>
+  <data name="ListKindDetailStatus" xml:space="preserve">
+    <value>Durumu </value>
+  </data>
+  <data name="ListKindName" xml:space="preserve">
+    <value>Emlak Türü</value>
+  </data>
+  <data name="ListKindStatus" xml:space="preserve">
+    <value>Durumu </value>
+  </data>
+  <data name="ListKindTypeList" xml:space="preserve">
+    <value>Tipler</value>
+  </data>
+  <data name="ListLanguageCode" xml:space="preserve">
+    <value>Dil Kodu</value>
+  </data>
+  <data name="ListLanguageFileName" xml:space="preserve">
+    <value>Dosya Adı</value>
+  </data>
+  <data name="ListLanguageFlag" xml:space="preserve">
+    <value>Bayrak</value>
+  </data>
+  <data name="ListLanguageName" xml:space="preserve">
+    <value>Dil Adı</value>
+  </data>
+  <data name="ListLanguageStatus" xml:space="preserve">
+    <value>Durum </value>
+  </data>
+  <data name="ListSalesmanEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="ListSalesmanName" xml:space="preserve">
+    <value>Ad Soyad</value>
+  </data>
+  <data name="ListSalesmanPhone" xml:space="preserve">
+    <value>Telefon</value>
+  </data>
+  <data name="ListSalesmanStatus" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="ListTownCityID" xml:space="preserve">
+    <value>İl Adı</value>
+  </data>
+  <data name="ListTownDistrictList" xml:space="preserve">
+    <value>Semtler</value>
+  </data>
+  <data name="ListTownName" xml:space="preserve">
+    <value>İlçe Adı</value>
+  </data>
+  <data name="ListTownStatus" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="ListTypeKindID" xml:space="preserve">
+    <value>Emlak Türü</value>
+  </data>
+  <data name="ListTypeName" xml:space="preserve">
+    <value>Emlak Tipi</value>
+  </data>
+  <data name="ListTypeStatus" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="MetaTagdescDisplay" xml:space="preserve">
+    <value>Meta Açıklama</value>
+  </data>
+  <data name="MetaTagDescRequired" xml:space="preserve">
+    <value>Meta Açıklama Alanı Boş Bırakılamaz</value>
+  </data>
+  <data name="MetaTagKeywordDisplay" xml:space="preserve">
+    <value>AnahtarKelime</value>
+  </data>
+  <data name="MetaTagKeywordRequired" xml:space="preserve">
+    <value>Aanahtar Kelime Alanı Boş Bırakılamaz</value>
+  </data>
+  <data name="MetaTagTitleDisplay" xml:space="preserve">
+    <value>Başlık</value>
+  </data>
+  <data name="MetaTagTitleRequired" xml:space="preserve">
+    <value>Başlık Alanı Boş Bırakılamaz</value>
+  </data>
+  <data name="SalesmanCreateTitle" xml:space="preserve">
+    <value>Satış Sorumlusu Oluşturma</value>
+  </data>
+  <data name="SalesmanEmailDisplay" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="SalesmanEmailInvalid" xml:space="preserve">
+    <value>Geçersiz Email Adresi</value>
+  </data>
+  <data name="SalesmanEmailRequired" xml:space="preserve">
+    <value>Email Alanı Boş Bırakılamaz</value>
+  </data>
+  <data name="SalesmanEmailString" xml:space="preserve">
+    <value>Email Alanı {1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="SalesmanNameDisplay" xml:space="preserve">
+    <value>Ad Soyad </value>
+  </data>
+  <data name="SalesmanNameRequired" xml:space="preserve">
+    <value>Ad Soyad Boş Bırakılamaz</value>
+  </data>
+  <data name="SalesmanNameString" xml:space="preserve">
+    <value>Ad Soyad Alanı {1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="SalesmanPhoneDisplay" xml:space="preserve">
+    <value>Telefon no</value>
+  </data>
+  <data name="SalesmanPhoneRequired" xml:space="preserve">
+    <value>Telefon no Boş Bırakılamaz</value>
+  </data>
+  <data name="SalesmanPhoneString" xml:space="preserve">
+    <value>Telefon Alanı {1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="SalesmanSearchTitle" xml:space="preserve">
+    <value>Satış Sorumlusu Arama</value>
+  </data>
+  <data name="SalesmanTitle" xml:space="preserve">
+    <value>Satış Sorumluları</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Kaydet </value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Ara</value>
+  </data>
+  <data name="SlaesmanStatusDisplay" xml:space="preserve">
+    <value>Durumu</value>
+  </data>
+  <data name="Successfull" xml:space="preserve">
+    <value>İşlem Başarılı </value>
+  </data>
+  <data name="TownCityIDDisplay" xml:space="preserve">
+    <value>İl </value>
+  </data>
+  <data name="TownCreateTitle" xml:space="preserve">
+    <value>İlçe Oluşturma</value>
+  </data>
+  <data name="TownNameDisplay" xml:space="preserve">
+    <value>İlçe Adı </value>
+  </data>
+  <data name="TownNameRequired" xml:space="preserve">
+    <value>İlçe Adı Boş Bırakılamaz</value>
+  </data>
+  <data name="TownNameString" xml:space="preserve">
+    <value>İlçe Adı Alanı {1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="TownSearchTitle" xml:space="preserve">
+    <value>İlçe Arama</value>
+  </data>
+  <data name="TownStatusDisplay" xml:space="preserve">
+    <value>Durumu </value>
+  </data>
+  <data name="TownTitle" xml:space="preserve">
+    <value>İlçeler</value>
+  </data>
+  <data name="TypeCreateTitle" xml:space="preserve">
+    <value>Emlak Tipi Oluşturma</value>
+  </data>
+  <data name="TypeKindIDDisplay" xml:space="preserve">
+    <value>Emlak Türü</value>
+  </data>
+  <data name="TypeNameDisplay" xml:space="preserve">
+    <value>Emlak Tipi</value>
+  </data>
+  <data name="TypeNameRequired" xml:space="preserve">
+    <value>Emlak Tipi Boş Geçilemez</value>
+  </data>
+  <data name="TypeNameString" xml:space="preserve">
+    <value>{1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="TypeSearchTitle" xml:space="preserve">
+    <value>Emlak Tipi Arama</value>
+  </data>
+  <data name="TypeStatusDisplay" xml:space="preserve">
+    <value>Durumu</value>
+  </data>
+  <data name="TypeTitle" xml:space="preserve">
+    <value>Emlak Tipi</value>
+  </data>
+  <data name="ContactInfoAddressDisplay" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="ContactInfoAddressString" xml:space="preserve">
+    <value>Adres {1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="ContactInfoCompanyNameDisplay" xml:space="preserve">
+    <value>Şirket Adı</value>
+  </data>
+  <data name="ContactInfoCompanyNameString" xml:space="preserve">
+    <value>Şirket Adı {1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="ContactInfoEmailDisplay" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="ContactInfoEmailInvalid" xml:space="preserve">
+    <value>Geçersiz Email Adresi</value>
+  </data>
+  <data name="ContactInfoEmailString" xml:space="preserve">
+    <value>Email {1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="ContactInfoFixedPhoneDisplay" xml:space="preserve">
+    <value>Sabit Telefon</value>
+  </data>
+  <data name="ContactInfoFixedPhoneString" xml:space="preserve">
+    <value>Sabit Telefon {1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="ContactInfoMobilePhoneDisplay" xml:space="preserve">
+    <value>Cep Telefonu</value>
+  </data>
+  <data name="ContactInfoMobilePhoneString" xml:space="preserve">
+    <value>Cep Telefonu {1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="ContactInformationCreateTitle" xml:space="preserve">
+    <value>İletişim Bilgileri Oluşturma</value>
+  </data>
+  <data name="ContactInformationFaxDisplay" xml:space="preserve">
+    <value>Fax Numarası</value>
+  </data>
+  <data name="ContactInformationFaxString" xml:space="preserve">
+    <value>Fax Numarası {1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="ContactInformationSearchTitle" xml:space="preserve">
+    <value>İletişim Bilgileri Arama</value>
+  </data>
+  <data name="ContactInformationTitle" xml:space="preserve">
+    <value>İletişim Bilgileri</value>
+  </data>
+  <data name="ContactInfoStatusDisplay" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="CurrencyCodeDisplay" xml:space="preserve">
+    <value>Döviz Kodu</value>
+  </data>
+  <data name="CurrencyCodeRequired" xml:space="preserve">
+    <value>Döviz Kodu Alanı Boş Bırakılamaz</value>
+  </data>
+  <data name="CurrencyCodeString" xml:space="preserve">
+    <value>Döviz Kodu Alanı Enfazla {1} Karakterden Oluşur</value>
+  </data>
+  <data name="CurrencyCreateTitle" xml:space="preserve">
+    <value>Döviz Oluşturma</value>
+  </data>
+  <data name="CurrencyNameDisplay" xml:space="preserve">
+    <value>Döviz Adı</value>
+  </data>
+  <data name="CurrencyNameRequired" xml:space="preserve">
+    <value>Döviz Adı Alanı Boş Bırakılamaz</value>
+  </data>
+  <data name="CurrencyNameString" xml:space="preserve">
+    <value>Döviz Adı Alanı Enfazla {1} Karakterden Oluşur</value>
+  </data>
+  <data name="CurrencySearchTitle" xml:space="preserve">
+    <value>Döviz Arama</value>
+  </data>
+  <data name="CurrencyStatusDisplay" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="CurrencyTitle" xml:space="preserve">
+    <value>Döviz Bilgileri</value>
+  </data>
+  <data name="ListContactInformationAddress" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="ListContactInformationCompanyName" xml:space="preserve">
+    <value>Şirket Adı</value>
+  </data>
+  <data name="ListContactInformationEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="ListContactInformationFax" xml:space="preserve">
+    <value>Faks</value>
+  </data>
+  <data name="ListContactInformationFixedPhone" xml:space="preserve">
+    <value>Sabit Telefon</value>
+  </data>
+  <data name="ListContactInformationMobilePhone" xml:space="preserve">
+    <value>Cep Telefon</value>
+  </data>
+  <data name="ListContactInformationStatus" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="ListCurrencyCode" xml:space="preserve">
+    <value>Kodu</value>
+  </data>
+  <data name="ListCurrencyName" xml:space="preserve">
+    <value>Döviz Adı</value>
+  </data>
+  <data name="ListCurrencyStatus" xml:space="preserve">
+    <value>Durumu</value>
+  </data>
+  <data name="MetaTagTitle" xml:space="preserve">
+    <value>Meta Tag</value>
+  </data>
+  <data name="ListPageControlAction" xml:space="preserve">
+    <value>Sayfa Değeri</value>
+  </data>
+  <data name="ListPageName" xml:space="preserve">
+    <value>Sayfa Adı</value>
+  </data>
+  <data name="PageControlActionDisplay" xml:space="preserve">
+    <value>Sayfa Değeri</value>
+  </data>
+  <data name="PageCreateTitle" xml:space="preserve">
+    <value>Sayfa Oluşturma</value>
+  </data>
+  <data name="PageNameDisplay" xml:space="preserve">
+    <value>Sayfa Adı</value>
+  </data>
+  <data name="PageNameRequired" xml:space="preserve">
+    <value>Sayfa Adı Boş Bırakılamaz</value>
+  </data>
+  <data name="PageNameString" xml:space="preserve">
+    <value>Sayfa Adı {1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="PageSearchTitle" xml:space="preserve">
+    <value>Sayfa Arama</value>
+  </data>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Sayfalar</value>
+  </data>
+  <data name="ListUserGroupName" xml:space="preserve">
+    <value>Üye Grubu Adı</value>
+  </data>
+  <data name="ListUserGroupStatus" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="UserGroupCreateTitle" xml:space="preserve">
+    <value>Üye Grubu Oluşturma</value>
+  </data>
+  <data name="UserGroupNameDisplay" xml:space="preserve">
+    <value>Üye Grubu Adı</value>
+  </data>
+  <data name="UserGroupNameRequired" xml:space="preserve">
+    <value>Üye Grubu Adı Boş Geçilemez</value>
+  </data>
+  <data name="UserGroupNameString" xml:space="preserve">
+    <value>{1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="UserGroupPageList" xml:space="preserve">
+    <value>Sayfa Listesi</value>
+  </data>
+  <data name="UserGroupSearchTitle" xml:space="preserve">
+    <value>Üye Grubu Arama</value>
+  </data>
+  <data name="UserGroupStatusDisplay" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="UserGroupTitle" xml:space="preserve">
+    <value>Üye Grupları</value>
+  </data>
+  <data name="ListUserEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="ListUserName" xml:space="preserve">
+    <value>Ad Soyad</value>
+  </data>
+  <data name="ListUserStatus" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="ListUserUserGroupName" xml:space="preserve">
+    <value>Grup Adı</value>
+  </data>
+  <data name="ListUserUserName" xml:space="preserve">
+    <value>Kullanıcı Adı</value>
+  </data>
+  <data name="UserConfirmPass" xml:space="preserve">
+    <value>Şifreler Uyuşmuyor Tekrar Deneyiniz</value>
+  </data>
+  <data name="UserConfirmPassDisplay" xml:space="preserve">
+    <value>Şifre Doğrula</value>
+  </data>
+  <data name="UserConfirmPassRequired" xml:space="preserve">
+    <value>Bu alan Boş Bırakılamaz</value>
+  </data>
+  <data name="UserConfirmPassString" xml:space="preserve">
+    <value>{1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="UserCreateTitle" xml:space="preserve">
+    <value>Kullanıcı Oluşturma</value>
+  </data>
+  <data name="UserEmailDisplay" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="UserEmailRequired" xml:space="preserve">
+    <value>Bu alan Boş Bırakılamaz</value>
+  </data>
+  <data name="UserEmailString" xml:space="preserve">
+    <value>{1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="UserNameDisplay" xml:space="preserve">
+    <value>Ad Soyad</value>
+  </data>
+  <data name="UserNameRequired" xml:space="preserve">
+    <value>Bu alan Boş Bırakılamaz</value>
+  </data>
+  <data name="UserNameString" xml:space="preserve">
+    <value>{1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="UserPassDisplay" xml:space="preserve">
+    <value>Şifre</value>
+  </data>
+  <data name="UserPassRequired" xml:space="preserve">
+    <value>Bu alan Boş Bırakılamaz</value>
+  </data>
+  <data name="UserPassString" xml:space="preserve">
+    <value>{1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="UserPhoneDisplay" xml:space="preserve">
+    <value>Telefon</value>
+  </data>
+  <data name="UserPhoneString" xml:space="preserve">
+    <value>{1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="UserSearchTitle" xml:space="preserve">
+    <value>Kullanıcı Arama</value>
+  </data>
+  <data name="UserStatusDisplay" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="UserTitle" xml:space="preserve">
+    <value>Kullanıcılar</value>
+  </data>
+  <data name="UserUserGroupDisplay" xml:space="preserve">
+    <value>Üye Grubu</value>
+  </data>
+  <data name="UserUserNameDisplay" xml:space="preserve">
+    <value>Kullanıcı Adı</value>
+  </data>
+  <data name="UserUserNameRequired" xml:space="preserve">
+    <value>Bu alan Boş Bırakılamaz</value>
+  </data>
+  <data name="UserUserNameString" xml:space="preserve">
+    <value>{1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="InformationPageMetaDescriptionDisplay" xml:space="preserve">
+    <value>Meta Açıklama</value>
+  </data>
+  <data name="InformationPageNameDisplay" xml:space="preserve">
+    <value>Sayfa Adı</value>
+  </data>
+  <data name="InformationPageNameRequired" xml:space="preserve">
+    <value>Bu alan Boş Bırakılamaz</value>
+  </data>
+  <data name="InformationPageNameString" xml:space="preserve">
+    <value>{1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="InformationPageSeoWordDisplay" xml:space="preserve">
+    <value>Seo Kelimesi</value>
+  </data>
+  <data name="InformationPageSeoWordString" xml:space="preserve">
+    <value>{1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="InformationPageStatusDisplay" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="InformationPageTextDisplay" xml:space="preserve">
+    <value>Sayfa Yazısı</value>
+  </data>
+  <data name="InformationPageTextRequired" xml:space="preserve">
+    <value>Bu alan Boş Bırakılamaz</value>
+  </data>
+  <data name="InformationPageCreateTitle" xml:space="preserve">
+    <value>Bilgi Sayfası Oluşturma</value>
+  </data>
+  <data name="InformationPageSearchTitle" xml:space="preserve">
+    <value>Bilgi Sayfası Arama</value>
+  </data>
+  <data name="InformationPageTitle" xml:space="preserve">
+    <value>Bilgi Sayfaları</value>
+  </data>
+  <data name="ListInformationPageName" xml:space="preserve">
+    <value>Sayfa Adı</value>
+  </data>
+  <data name="ListInformationPageStatus" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="InformationPageEditTitle" xml:space="preserve">
+    <value>Bilgi Sayfası Oluşturma</value>
+  </data>
+  <data name="AdCategoryIDDisplay" xml:space="preserve">
+    <value>Emlak Kategorisi</value>
+  </data>
+  <data name="AdCityIDDisplay" xml:space="preserve">
+    <value>İl</value>
+  </data>
+  <data name="AdCreateTitle" xml:space="preserve">
+    <value>İlan Oluşturma</value>
+  </data>
+  <data name="AdDepositDisplay" xml:space="preserve">
+    <value>Depozito</value>
+  </data>
+  <data name="AdDescriptionDisplay" xml:space="preserve">
+    <value>Açıklama</value>
+  </data>
+  <data name="AdDescriptionRequired" xml:space="preserve">
+    <value>Bu alan Zorunlu</value>
+  </data>
+  <data name="AdDistrictIDDisplay" xml:space="preserve">
+    <value>Semt</value>
+  </data>
+  <data name="AdEmailInvalid" xml:space="preserve">
+    <value>Geçersiz Email Adresi</value>
+  </data>
+  <data name="AdKeywordsDisplay" xml:space="preserve">
+    <value>Anahtar Kelimeler</value>
+  </data>
+  <data name="AdKindIDDisplay" xml:space="preserve">
+    <value>Emlak Türü</value>
+  </data>
+  <data name="AdLocationDisplay" xml:space="preserve">
+    <value>Mevkii</value>
+  </data>
+  <data name="AdLocationString" xml:space="preserve">
+    <value>{1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="AdMetaDescriptionDisplay" xml:space="preserve">
+    <value>Meta Açıklama</value>
+  </data>
+  <data name="AdOwnerEmailDisplay" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="AdOwnerEmailString" xml:space="preserve">
+    <value>{1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="AdOwnerNameDisplay" xml:space="preserve">
+    <value>Emlak Sahibi Adı Soyadı</value>
+  </data>
+  <data name="AdOwnerNameString" xml:space="preserve">
+    <value>{1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="AdOwnerPhoneDisplay" xml:space="preserve">
+    <value>Emlak Sahibi Telefonu</value>
+  </data>
+  <data name="AdOwnerPhoneString" xml:space="preserve">
+    <value>{1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="AdPriceDisplay" xml:space="preserve">
+    <value>Fiyat</value>
+  </data>
+  <data name="AdSalesmanIDDisplay" xml:space="preserve">
+    <value>Satış Sorumlusu</value>
+  </data>
+  <data name="AdSeoWordDisplay" xml:space="preserve">
+    <value>Seo Kelime</value>
+  </data>
+  <data name="AdSeoWordString" xml:space="preserve">
+    <value>{1} Karakterden Fazla Olamaz</value>
+  </data>
+  <data name="AdStatusDisplay" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="AdTitle" xml:space="preserve">
+    <value>İlan </value>
+  </data>
+  <data name="AdTitleDisplay" xml:space="preserve">
+    <value>İlan Başlığı</value>
+  </data>
+  <data name="AdTitleRequired" xml:space="preserve">
+    <value>Bu alan Zorunlu</value>
+  </data>
+  <data name="AdTownIDDisplay" xml:space="preserve">
+    <value>İlçe</value>
+  </data>
+  <data name="AdTypeIDDisplay" xml:space="preserve">
+    <value>Emlak Tipi</value>
+  </data>
+  <data name="ListAdStatus" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="ListAdTitle" xml:space="preserve">
+    <value>Başlık</value>
+  </data>
+  <data name="AdEditTitle" xml:space="preserve">
+    <value>İlan Düzenleme</value>
+  </data>
+  <data name="AdToPhotoTitle" xml:space="preserve">
+    <value>İlan Resimleri</value>
+  </data>
+  <data name="AdToPhotoUploadTitle" xml:space="preserve">
+    <value>Resim Yükleme</value>
+  </data>
+  <data name="ListAdPicture" xml:space="preserve">
+    <value>Resim Ekle</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>Büyüt</value>
+  </data>
+  <data name="AdDetailTitle" xml:space="preserve">
+    <value>İlan Detayları</value>
+  </data>
+  <data name="PleaseSelect" xml:space="preserve">
+    <value>Lütfen Seçiniz</value>
+  </data>
+  <data name="ListAdDetail" xml:space="preserve">
+    <value>Detay</value>
+  </data>
+</root>

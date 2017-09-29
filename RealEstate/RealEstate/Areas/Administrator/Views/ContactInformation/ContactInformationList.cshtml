@@ -1,0 +1,103 @@
+﻿@model IEnumerable<RealEstate.Models.ContactInformation>
+@using RealEstate.HtmlHelpers
+
+@Html.BackToLink()
+<div id="Info">
+    <table cellpadding="0" cellspacing="0" border="0" class="display" id="example">
+        <thead>
+            <tr>
+                <th>
+                   @Html.Language("", "ListContactInformationCompanyName")
+                
+                </th>
+                <th>
+                    @Html.Language("", "ListContactInformationFixedPhone")
+
+                </th>
+                <th>
+                    @Html.Language("", "ListContactInformationMobilePhone")
+
+                </th>
+                <th>
+                    @Html.Language("", "ListContactInformationFax")
+
+                </th>
+                <th>
+                    @Html.Language("", "ListContactInformationEmail")
+
+                </th>
+                <th>
+                    @Html.Language("", "ListContactInformationAddress")
+
+                </th>
+                <th style="width:10%">
+                    @Html.Language("", "ListContactInformationStatus")
+                </th>
+                <th style="width:2%">
+                    @Html.Language("", "Edit")
+                </th>
+                <th style="width:2%">
+                    @Html.Language("", "Delete")
+                </th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td style="border:solid 1px">
+                        @Html.DisplayFor(modelItem => item.CompanyName)
+                    </td>
+                    
+                    <td style="border:solid 1px">
+                        @Html.DisplayFor(modelItem => item.FixedPhone)
+                    </td>
+
+                    <td style="border:solid 1px">
+                        @Html.DisplayFor(modelItem => item.MobilePhone)
+                    </td>
+
+                    <td style="border:solid 1px">
+                        @Html.DisplayFor(modelItem => item.Fax)
+                    </td>
+
+                    <td style="border:solid 1px">
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+
+                    <td style="border:solid 1px">
+                        @Html.DisplayFor(modelItem => item.Address)
+                    </td>
+
+                    <td style="border:solid 1px">
+                      @if (item.Status == true)
+                      {
+                          <img src="~/Areas/Administrator/Content/images/true.png" />
+                      }
+                      else
+                      {
+                        <img src="~/Areas/Administrator/Content/images/false.png" />
+                      }
+
+                    </td>
+                    <td style="border:solid 1px">
+                        <a href="@Url.Action("Edit", new { id = item.ID, PageIndex = this.Url.RequestContext.RouteData.Values["PageIndex"] })" class="aModal" title="@item.CompanyName">
+                            <img src="~/Areas/Administrator/Content/images/edit.png" />
+                        </a>
+                    </td>
+                    <td style="border:solid 1px">
+                        <a href="@Url.Action("Delete", new { id = item.ID, PageIndex = this.Url.RequestContext.RouteData.Values["PageIndex"] })" class="deleteButton"title="@item.CompanyName">
+                            <img src="~/Areas/Administrator/Content/images/cross.png" />
+                        </a>
+                    </td>
+                   
+                </tr>
+            }
+        </tbody>
+    </table>
+      
+        @Html.PageToLink(int.Parse(ViewData["TPage"].ToString()))
+        
+
+</div>

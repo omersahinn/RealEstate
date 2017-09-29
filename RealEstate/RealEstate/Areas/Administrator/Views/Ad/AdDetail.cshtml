@@ -1,0 +1,63 @@
+﻿@model IEnumerable<RealEstate.Models.KindDetail>
+@using RealEstate.HtmlHelpers
+@{
+    ViewBag.Title = "AdDetail";
+    Layout = "~/Areas/Administrator/Views/Shared/Site.cshtml";
+}
+
+<div class="portlet x12">
+    <div class="portlet-header">
+        <h4>@Html.Language("", "AdDetailTitle")</h4>
+
+
+        <div class="portlet-content">
+            <br />
+            <a name="plugin"></a>
+            @using (Html.BeginForm("AdDetail", "Ad", FormMethod.Post, new { @class = "form label-inline" }))
+            {
+
+
+               foreach (var item in Model)
+                {
+
+                    if (item.ControlType == "DropDownList")
+                    {
+                        <div class="field">
+                            <label for="type">
+                                @item.Name @Html.Hidden("hiddenDrop", item.ID)
+                            </label>
+
+
+                            @Html.DropDownList("KindDetailDrop", new SelectList(item.KindDetailMembers, "ID", "Name", item.AdDetailByKinds.Where(a => a.AdID == Convert.ToInt32(ViewData["id"])).Select(a => a.KindDetailMemberID).SingleOrDefault()), Resources.lang.PleaseSelect);
+
+                        </div>
+                    }
+
+
+                   else if (item.ControlType == "CheckBox")
+                   {
+                        
+                           <div class="controlset field">
+                               <span class="label">@item.Name</span>
+                               <div class="controlset-pad">
+                                   @foreach (var item1 in item.KindDetailMembers)
+                                   {
+                                    <br />
+                                       <label for="check1"> @item1.Name </label> <input type="checkbox" name="MemberList" value="@item1.ID-@item.ID"  @item.AdDetailByKinds.Where(a => a.AdID == Convert.ToInt32(ViewData["id"])).Where(a => a.KindDetailMemberID == item1.ID).Count() !=0 ? checked />
+                                   }
+                               </div>
+                           </div>
+                             
+
+                   }
+                     
+              }
+
+                            <div class="buttonrow">
+                                <input type="submit" class="btn" value="@Html.Language(" "," Save")" />
+
+                            </div>
+       }
+                        </div>
+                    </div>
+                </div>

@@ -1,0 +1,31 @@
+﻿@model IEnumerable<RealEstate.Models.City>
+@using RealEstate.HtmlHelpers
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Administrator/Views/Shared/Site.cshtml";
+}
+
+
+
+<div class="portlet x12">
+    <div class="portlet-header">
+        <h4>@Html.Language("","CityTitle")</h4>
+        <div id="info">
+            <div class="buttonrow">
+               <a href='@Url.Action("Create",new { PageIndex=this.Url.RequestContext.RouteData.Values["PageIndex"]})' class="aCreate" title="@Html.Language("","CityCreateTitle")" >
+                 <input type="submit" value="@Html.Language("","Create")" />
+               </a>
+                <a href='@Url.Action("Search",new { PageIndex=this.Url.RequestContext.RouteData.Values["PageIndex"]})' class="aCreate" title="@Html.Language("","CitySearchTitle")">
+                    <input type="submit" value="@Html.Language("","Search")" />
+                </a>
+            </div>
+        </div>
+        <div class="portlet-content">
+            <br />
+            <a name="plugin"></a>
+            @{Html.RenderPartial("CityList", Model); }
+        </div>
+    </div>
+</div>
+
+  
