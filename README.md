@@ -1,2 +1,2 @@
 # RealEstate
-Emlak Sitesi yazım aşamasındadır.
+Emlak Sitesi, yazım aşamasındadır.
